@@ -1,0 +1,57 @@
+{
+  "name": "uomgo-express-api",
+  "version": "1.0.0",
+  "description": "UOMGO express API",
+  "main": "./dist/server.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "npm run serve",
+    "start:watch": "tsc-watch --onSuccess \"npm run serve\"",
+    "serve": "node dist/server",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint --cache --ext .ts src",
+    "eslint:dump": "eslint --print-config ./.eslintrc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergofan/uomgo-express-api.git"
+  },
+  "author": "Sergofan <Sergofan.Git@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergofan/uomgo-express-api/issues"
+  },
+  "homepage": "https://github.com/sergofan/uomgo-express-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.0",
+    "paint-console": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/method-override": "0.0.31",
+    "@types/mongoose": "^5.7.36",
+    "@typescript-eslint/eslint-plugin": "^3.10.0",
+    "@typescript-eslint/parser": "^3.10.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-jest-enzyme": "^7.1.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-comments": "^1.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier": "2.1.0",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.0.2"
+  }
+}
